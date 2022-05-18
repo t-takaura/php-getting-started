@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Twig Example</title>
+    </head>
+    <body>
+    <h1>{{ hostinfo }}</h1>
+    <table border="1" style="width: 80%;">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Branch</td>
+                <td>Age</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in staffs %}
+                <tr>
+                    <td>{{ product.id }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.branch }}</td>
+                    <td>{{ product.age }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </body>
+</html>
